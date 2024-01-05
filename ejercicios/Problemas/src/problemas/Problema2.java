@@ -44,15 +44,33 @@ public class Problema2 {
         System.out.println("Escribir L1");
         l1 = entrada.nextDouble();
         l1 = l1 * 4;
-        System.out.print("El area del cuadrado es:"+l1);
+        System.out.printf("El area del cuadrado es:%.2f\n",l1);
     }
 
     public static void obtenerAreaTriangulo() {
-
+        Scanner entrada = new Scanner(System.in);
+        double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese base");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese altura");
+        altura = entrada.nextDouble();
+        area = (base * altura) / 2;
+        System.out.printf("El area del triangulo es:%.2f\n",area);
     }
 
     public static void obtenerAreaRectangulo() {
-
+        Scanner entrada = new Scanner(System.in);
+        double base;
+        double altura;
+        double area;
+        System.out.println("Ingrese base");
+        base = entrada.nextDouble();
+        System.out.println("Ingrese altura");
+        altura = entrada.nextDouble();
+        area = base * altura;
+        System.out.printf("El area del rectangulo es:%.2f\n",area);
     }
 
 }
